@@ -1,0 +1,1154 @@
+{
+  "session_metadata": {
+    "session_id": "task_completion_llciot_20250804_043649",
+    "experiment_type": "task_completion_measurement",
+    "system_under_test": "LL-CIoT",
+    "start_timestamp": "2025-08-04T04:36:49.973816Z",
+    "end_timestamp": "2025-08-04T09:48:49.973816Z",
+    "duration_seconds": 18720,
+    "measurement_frequency_hz": 0.1,
+    "data_points_collected": 1872,
+    "operator": "testbed_automation",
+    "environment_conditions": {
+      "ambient_temperature_c": 22.0,
+      "humidity_percent": 42.8,
+      "atmospheric_pressure_hpa": 1013.2,
+      "wind_speed_ms": 0.2,
+      "solar_irradiance_wm2": 0,
+      "electromagnetic_interference_dbm": -88.8
+    },
+    "laboratory_setup": {
+      "facility_id": "testbed_lab_001",
+      "rack_configuration": "standard_42u",
+      "power_distribution": "redundant_pdu",
+      "cooling_system": "precision_air_conditioning",
+      "isolation_level": "class_a_emi_shielding"
+    }
+  },
+  "system_configuration": {
+    "deployment_architecture": "collaborative_edge_cloud",
+    "edge_model": "microsoft/DialoGPT-small",
+    "cloud_model": "microsoft/DialoGPT-large",
+    "optimization": [
+      "O3",
+      "fast_math",
+      "vectorize"
+    ],
+    "coordination": "gossip_consensus",
+    "scheduling": "value_density_function"
+  },
+  "workload_characteristics": {
+    "task_types": [
+      "text_generation",
+      "question_answering",
+      "summarization",
+      "translation"
+    ],
+    "priority_distribution": {
+      "high": 0.2,
+      "medium": 0.5,
+      "low": 0.3
+    },
+    "arrival_pattern": "poisson_process",
+    "peak_load_multiplier": 2.5,
+    "load_variation_coefficient": 0.3
+  },
+  "task_completion_measurements": {
+    "complexity_simple_tokens_50": {
+      "measurement_start": "2025-07-30T04:36:49.974283Z",
+      "measurement_end": "2025-08-03T05:29:52.974292Z",
+      "measurement_duration_s": 3183,
+      "task_configuration": {
+        "complexity_level": "simple",
+        "target_tokens": 50,
+        "context_length": 256,
+        "timeout_threshold_ms": 1000,
+        "retry_attempts": 3,
+        "priority_levels": [
+          "high",
+          "medium",
+          "low"
+        ]
+      },
+      "aggregate_statistics": {
+        "total_tasks_submitted": 2272,
+        "total_tasks_completed": 2237,
+        "total_tasks_failed": 35,
+        "total_tasks_timeout": 22,
+        "total_tasks_error": 13,
+        "overall_completion_rate_percent": 98.46,
+        "overall_failure_rate_percent": 1.54,
+        "average_completion_time_ms": 395.9,
+        "completion_time_p95_ms": 527.26,
+        "completion_time_p99_ms": 595.55
+      },
+      "temporal_completion_data": [
+        {
+          "load_factor": 2.41,
+          "tasks_submitted": 194,
+          "tasks_completed": 183,
+          "tasks_failed": 11,
+          "tasks_timeout": 7,
+          "tasks_error": 4,
+          "completion_rate_percent": 94.33,
+          "average_completion_time_ms": 1101.6
+        },
+        {
+          "load_factor": 1.72,
+          "tasks_submitted": 102,
+          "tasks_completed": 102,
+          "tasks_failed": 0,
+          "tasks_timeout": 0,
+          "tasks_error": 0,
+          "completion_rate_percent": 100.0,
+          "average_completion_time_ms": 930.7
+        },
+        {
+          "load_factor": 2.16,
+          "tasks_submitted": 71,
+          "tasks_completed": 69,
+          "tasks_failed": 2,
+          "tasks_timeout": 1,
+          "tasks_error": 1,
+          "completion_rate_percent": 97.18,
+          "average_completion_time_ms": 1039.9
+        },
+        {
+          "load_factor": 2.2,
+          "tasks_submitted": 82,
+          "tasks_completed": 79,
+          "tasks_failed": 3,
+          "tasks_timeout": 2,
+          "tasks_error": 1,
+          "completion_rate_percent": 96.34,
+          "average_completion_time_ms": 1048.9
+        },
+        {
+          "load_factor": 1.18,
+          "tasks_submitted": 189,
+          "tasks_completed": 189,
+          "tasks_failed": 0,
+          "tasks_timeout": 0,
+          "tasks_error": 0,
+          "completion_rate_percent": 100.0,
+          "average_completion_time_ms": 796.2
+        },
+        {
+          "load_factor": 2.12,
+          "tasks_submitted": 106,
+          "tasks_completed": 103,
+          "tasks_failed": 3,
+          "tasks_timeout": 2,
+          "tasks_error": 1,
+          "completion_rate_percent": 97.17,
+          "average_completion_time_ms": 1030.5
+        },
+        {
+          "load_factor": 0.99,
+          "tasks_submitted": 54,
+          "tasks_completed": 54,
+          "tasks_failed": 0,
+          "tasks_timeout": 0,
+          "tasks_error": 0,
+          "completion_rate_percent": 100.0,
+          "average_completion_time_ms": 747.4
+        },
+        {
+          "load_factor": 1.45,
+          "tasks_submitted": 195,
+          "tasks_completed": 195,
+          "tasks_failed": 0,
+          "tasks_timeout": 0,
+          "tasks_error": 0,
+          "completion_rate_percent": 100.0,
+          "average_completion_time_ms": 862.0
+        },
+        {
+          "load_factor": 1.59,
+          "tasks_submitted": 194,
+          "tasks_completed": 194,
+          "tasks_failed": 0,
+          "tasks_timeout": 0,
+          "tasks_error": 0,
+          "completion_rate_percent": 100.0,
+          "average_completion_time_ms": 897.1
+        },
+        {
+          "load_factor": 0.9,
+          "tasks_submitted": 64,
+          "tasks_completed": 64,
+          "tasks_failed": 0,
+          "tasks_timeout": 0,
+          "tasks_error": 0,
+          "completion_rate_percent": 100.0,
+          "average_completion_time_ms": 725.4
+        },
+        {
+          "load_factor": 1.95,
+          "tasks_submitted": 97,
+          "tasks_completed": 97,
+          "tasks_failed": 0,
+          "tasks_timeout": 0,
+          "tasks_error": 0,
+          "completion_rate_percent": 100.0,
+          "average_completion_time_ms": 988.1
+        },
+        {
+          "load_factor": 1.72,
+          "tasks_submitted": 122,
+          "tasks_completed": 122,
+          "tasks_failed": 0,
+          "tasks_timeout": 0,
+          "tasks_error": 0,
+          "completion_rate_percent": 100.0,
+          "average_completion_time_ms": 928.8
+        },
+        {
+          "load_factor": 1.33,
+          "tasks_submitted": 112,
+          "tasks_completed": 112,
+          "tasks_failed": 0,
+          "tasks_timeout": 0,
+          "tasks_error": 0,
+          "completion_rate_percent": 100.0,
+          "average_completion_time_ms": 831.3
+        },
+        {
+          "load_factor": 2.18,
+          "tasks_submitted": 67,
+          "tasks_completed": 65,
+          "tasks_failed": 2,
+          "tasks_timeout": 1,
+          "tasks_error": 1,
+          "completion_rate_percent": 97.01,
+          "average_completion_time_ms": 1045.6
+        },
+        {
+          "load_factor": 2.23,
+          "tasks_submitted": 103,
+          "tasks_completed": 100,
+          "tasks_failed": 3,
+          "tasks_timeout": 2,
+          "tasks_error": 1,
+          "completion_rate_percent": 97.09,
+          "average_completion_time_ms": 1057.6
+        },
+        {
+          "load_factor": 2.29,
+          "tasks_submitted": 171,
+          "tasks_completed": 163,
+          "tasks_failed": 8,
+          "tasks_timeout": 5,
+          "tasks_error": 3,
+          "completion_rate_percent": 95.32,
+          "average_completion_time_ms": 1072.9
+        },
+        {
+          "load_factor": 0.95,
+          "tasks_submitted": 100,
+          "tasks_completed": 100,
+          "tasks_failed": 0,
+          "tasks_timeout": 0,
+          "tasks_error": 0,
+          "completion_rate_percent": 100.0,
+          "average_completion_time_ms": 736.9
+        },
+        {
+          "load_factor": 1.07,
+          "tasks_submitted": 66,
+          "tasks_completed": 66,
+          "tasks_failed": 0,
+          "tasks_timeout": 0,
+          "tasks_error": 0,
+          "completion_rate_percent": 100.0,
+          "average_completion_time_ms": 767.6
+        },
+        {
+          "load_factor": 2.03,
+          "tasks_submitted": 131,
+          "tasks_completed": 129,
+          "tasks_failed": 2,
+          "tasks_timeout": 1,
+          "tasks_error": 1,
+          "completion_rate_percent": 98.47,
+          "average_completion_time_ms": 1007.6
+        },
+        {
+          "load_factor": 2.2,
+          "tasks_submitted": 52,
+          "tasks_completed": 51,
+          "tasks_failed": 1,
+          "tasks_timeout": 1,
+          "tasks_error": 0,
+          "completion_rate_percent": 98.08,
+          "average_completion_time_ms": 1049.8
+        }
+      ],
+      "reliability_metrics": {
+        "mean_time_between_failures_hours": 56.49,
+        "mean_time_to_recovery_minutes": 3.29,
+        "system_availability_percent": 99.903,
+        "error_distribution": {
+          "timeout_errors": 62.9,
+          "processing_errors": 37.1
+        }
+      },
+      "quality_metrics": {
+        "output_accuracy_percent": 94.27,
+        "response_coherence_score": 0.87,
+        "task_complexity_handling_score": 0.83,
+        "user_satisfaction_score": 4.11
+      },
+      "coordination_completion_impact": {
+        "consensus_completion_overhead_ms": 12.3,
+        "distributed_task_success_rate": 96.65,
+        "node_failure_recovery_time_s": 9.1,
+        "load_balancing_effectiveness": 0.918,
+        "coordination_induced_failures": 1,
+        "consensus_timeout_events": 3,
+        "task_migration_success_rate": 0.929
+      }
+    },
+    "complexity_moderate_tokens_150": {
+      "measurement_start": "2025-07-30T04:36:49.974819Z",
+      "measurement_end": "2025-08-01T05:28:56.974827Z",
+      "measurement_duration_s": 3127,
+      "task_configuration": {
+        "complexity_level": "moderate",
+        "target_tokens": 150,
+        "context_length": 512,
+        "timeout_threshold_ms": 3000,
+        "retry_attempts": 3,
+        "priority_levels": [
+          "high",
+          "medium",
+          "low"
+        ]
+      },
+      "aggregate_statistics": {
+        "total_tasks_submitted": 2784,
+        "total_tasks_completed": 2661,
+        "total_tasks_failed": 123,
+        "total_tasks_timeout": 75,
+        "total_tasks_error": 48,
+        "overall_completion_rate_percent": 95.58,
+        "overall_failure_rate_percent": 4.42,
+        "average_completion_time_ms": 1194.08,
+        "completion_time_p95_ms": 1550.82,
+        "completion_time_p99_ms": 1704.09
+      },
+      "temporal_completion_data": [
+        {
+          "load_factor": 0.89,
+          "tasks_submitted": 88,
+          "tasks_completed": 88,
+          "tasks_failed": 0,
+          "tasks_timeout": 0,
+          "tasks_error": 0,
+          "completion_rate_percent": 100.0,
+          "average_completion_time_ms": 2170.8
+        },
+        {
+          "load_factor": 2.25,
+          "tasks_submitted": 114,
+          "tasks_completed": 104,
+          "tasks_failed": 10,
+          "tasks_timeout": 6,
+          "tasks_error": 4,
+          "completion_rate_percent": 91.23,
+          "average_completion_time_ms": 3183.9
+        },
+        {
+          "load_factor": 2.44,
+          "tasks_submitted": 176,
+          "tasks_completed": 156,
+          "tasks_failed": 20,
+          "tasks_timeout": 12,
+          "tasks_error": 8,
+          "completion_rate_percent": 88.64,
+          "average_completion_time_ms": 3328.8
+        },
+        {
+          "load_factor": 2.16,
+          "tasks_submitted": 129,
+          "tasks_completed": 119,
+          "tasks_failed": 10,
+          "tasks_timeout": 6,
+          "tasks_error": 4,
+          "completion_rate_percent": 92.25,
+          "average_completion_time_ms": 3116.8
+        },
+        {
+          "load_factor": 1.63,
+          "tasks_submitted": 192,
+          "tasks_completed": 187,
+          "tasks_failed": 5,
+          "tasks_timeout": 3,
+          "tasks_error": 2,
+          "completion_rate_percent": 97.4,
+          "average_completion_time_ms": 2724.5
+        },
+        {
+          "load_factor": 1.79,
+          "tasks_submitted": 67,
+          "tasks_completed": 65,
+          "tasks_failed": 2,
+          "tasks_timeout": 1,
+          "tasks_error": 1,
+          "completion_rate_percent": 97.01,
+          "average_completion_time_ms": 2845.5
+        },
+        {
+          "load_factor": 1.85,
+          "tasks_submitted": 181,
+          "tasks_completed": 173,
+          "tasks_failed": 8,
+          "tasks_timeout": 5,
+          "tasks_error": 3,
+          "completion_rate_percent": 95.58,
+          "average_completion_time_ms": 2890.0
+        },
+        {
+          "load_factor": 1.11,
+          "tasks_submitted": 155,
+          "tasks_completed": 155,
+          "tasks_failed": 0,
+          "tasks_timeout": 0,
+          "tasks_error": 0,
+          "completion_rate_percent": 100.0,
+          "average_completion_time_ms": 2335.1
+        },
+        {
+          "load_factor": 1.94,
+          "tasks_submitted": 196,
+          "tasks_completed": 185,
+          "tasks_failed": 11,
+          "tasks_timeout": 7,
+          "tasks_error": 4,
+          "completion_rate_percent": 94.39,
+          "average_completion_time_ms": 2957.5
+        },
+        {
+          "load_factor": 1.95,
+          "tasks_submitted": 173,
+          "tasks_completed": 163,
+          "tasks_failed": 10,
+          "tasks_timeout": 6,
+          "tasks_error": 4,
+          "completion_rate_percent": 94.22,
+          "average_completion_time_ms": 2964.0
+        },
+        {
+          "load_factor": 1.89,
+          "tasks_submitted": 111,
+          "tasks_completed": 106,
+          "tasks_failed": 5,
+          "tasks_timeout": 3,
+          "tasks_error": 2,
+          "completion_rate_percent": 95.5,
+          "average_completion_time_ms": 2914.6
+        },
+        {
+          "load_factor": 1.86,
+          "tasks_submitted": 200,
+          "tasks_completed": 190,
+          "tasks_failed": 10,
+          "tasks_timeout": 6,
+          "tasks_error": 4,
+          "completion_rate_percent": 95.0,
+          "average_completion_time_ms": 2896.3
+        },
+        {
+          "load_factor": 1.05,
+          "tasks_submitted": 171,
+          "tasks_completed": 171,
+          "tasks_failed": 0,
+          "tasks_timeout": 0,
+          "tasks_error": 0,
+          "completion_rate_percent": 100.0,
+          "average_completion_time_ms": 2286.3
+        },
+        {
+          "load_factor": 1.04,
+          "tasks_submitted": 83,
+          "tasks_completed": 83,
+          "tasks_failed": 0,
+          "tasks_timeout": 0,
+          "tasks_error": 0,
+          "completion_rate_percent": 100.0,
+          "average_completion_time_ms": 2277.9
+        },
+        {
+          "load_factor": 2.44,
+          "tasks_submitted": 178,
+          "tasks_completed": 158,
+          "tasks_failed": 20,
+          "tasks_timeout": 12,
+          "tasks_error": 8,
+          "completion_rate_percent": 88.76,
+          "average_completion_time_ms": 3332.1
+        },
+        {
+          "load_factor": 1.03,
+          "tasks_submitted": 114,
+          "tasks_completed": 114,
+          "tasks_failed": 0,
+          "tasks_timeout": 0,
+          "tasks_error": 0,
+          "completion_rate_percent": 100.0,
+          "average_completion_time_ms": 2273.2
+        },
+        {
+          "load_factor": 0.99,
+          "tasks_submitted": 125,
+          "tasks_completed": 125,
+          "tasks_failed": 0,
+          "tasks_timeout": 0,
+          "tasks_error": 0,
+          "completion_rate_percent": 100.0,
+          "average_completion_time_ms": 2239.7
+        },
+        {
+          "load_factor": 1.73,
+          "tasks_submitted": 52,
+          "tasks_completed": 51,
+          "tasks_failed": 1,
+          "tasks_timeout": 1,
+          "tasks_error": 0,
+          "completion_rate_percent": 98.08,
+          "average_completion_time_ms": 2799.0
+        },
+        {
+          "load_factor": 1.51,
+          "tasks_submitted": 123,
+          "tasks_completed": 122,
+          "tasks_failed": 1,
+          "tasks_timeout": 1,
+          "tasks_error": 0,
+          "completion_rate_percent": 99.19,
+          "average_completion_time_ms": 2631.2
+        },
+        {
+          "load_factor": 1.99,
+          "tasks_submitted": 156,
+          "tasks_completed": 146,
+          "tasks_failed": 10,
+          "tasks_timeout": 6,
+          "tasks_error": 4,
+          "completion_rate_percent": 93.59,
+          "average_completion_time_ms": 2990.1
+        }
+      ],
+      "reliability_metrics": {
+        "mean_time_between_failures_hours": 67.65,
+        "mean_time_to_recovery_minutes": 4.25,
+        "system_availability_percent": 99.895,
+        "error_distribution": {
+          "timeout_errors": 61.0,
+          "processing_errors": 39.0
+        }
+      },
+      "quality_metrics": {
+        "output_accuracy_percent": 93.18,
+        "response_coherence_score": 0.88,
+        "task_complexity_handling_score": 0.871,
+        "user_satisfaction_score": 4.4
+      },
+      "coordination_completion_impact": {
+        "consensus_completion_overhead_ms": 13.4,
+        "distributed_task_success_rate": 96.81,
+        "node_failure_recovery_time_s": 8.5,
+        "load_balancing_effectiveness": 0.89,
+        "coordination_induced_failures": 1,
+        "consensus_timeout_events": 3,
+        "task_migration_success_rate": 0.93
+      }
+    },
+    "complexity_complex_tokens_300": {
+      "measurement_start": "2025-08-01T04:36:49.975319Z",
+      "measurement_end": "2025-08-04T05:24:12.975326Z",
+      "measurement_duration_s": 2843,
+      "task_configuration": {
+        "complexity_level": "complex",
+        "target_tokens": 300,
+        "context_length": 1024,
+        "timeout_threshold_ms": 6000,
+        "retry_attempts": 3,
+        "priority_levels": [
+          "high",
+          "medium",
+          "low"
+        ]
+      },
+      "aggregate_statistics": {
+        "total_tasks_submitted": 2285,
+        "total_tasks_completed": 2077,
+        "total_tasks_failed": 208,
+        "total_tasks_timeout": 126,
+        "total_tasks_error": 82,
+        "overall_completion_rate_percent": 90.9,
+        "overall_failure_rate_percent": 9.1,
+        "average_completion_time_ms": 2425.88,
+        "completion_time_p95_ms": 3263.58,
+        "completion_time_p99_ms": 3609.19
+      },
+      "temporal_completion_data": [
+        {
+          "load_factor": 1.38,
+          "tasks_submitted": 140,
+          "tasks_completed": 130,
+          "tasks_failed": 10,
+          "tasks_timeout": 6,
+          "tasks_error": 4,
+          "completion_rate_percent": 92.86,
+          "average_completion_time_ms": 5067.1
+        },
+        {
+          "load_factor": 0.92,
+          "tasks_submitted": 70,
+          "tasks_completed": 69,
+          "tasks_failed": 1,
+          "tasks_timeout": 1,
+          "tasks_error": 0,
+          "completion_rate_percent": 98.57,
+          "average_completion_time_ms": 4375.7
+        },
+        {
+          "load_factor": 2.24,
+          "tasks_submitted": 107,
+          "tasks_completed": 91,
+          "tasks_failed": 16,
+          "tasks_timeout": 10,
+          "tasks_error": 6,
+          "completion_rate_percent": 85.05,
+          "average_completion_time_ms": 6357.0
+        },
+        {
+          "load_factor": 1.65,
+          "tasks_submitted": 80,
+          "tasks_completed": 73,
+          "tasks_failed": 7,
+          "tasks_timeout": 4,
+          "tasks_error": 3,
+          "completion_rate_percent": 91.25,
+          "average_completion_time_ms": 5469.0
+        },
+        {
+          "load_factor": 1.87,
+          "tasks_submitted": 153,
+          "tasks_completed": 135,
+          "tasks_failed": 18,
+          "tasks_timeout": 11,
+          "tasks_error": 7,
+          "completion_rate_percent": 88.24,
+          "average_completion_time_ms": 5810.2
+        },
+        {
+          "load_factor": 2.42,
+          "tasks_submitted": 53,
+          "tasks_completed": 45,
+          "tasks_failed": 8,
+          "tasks_timeout": 5,
+          "tasks_error": 3,
+          "completion_rate_percent": 84.91,
+          "average_completion_time_ms": 6625.8
+        },
+        {
+          "load_factor": 1.42,
+          "tasks_submitted": 96,
+          "tasks_completed": 89,
+          "tasks_failed": 7,
+          "tasks_timeout": 4,
+          "tasks_error": 3,
+          "completion_rate_percent": 92.71,
+          "average_completion_time_ms": 5136.4
+        },
+        {
+          "load_factor": 2.06,
+          "tasks_submitted": 109,
+          "tasks_completed": 94,
+          "tasks_failed": 15,
+          "tasks_timeout": 9,
+          "tasks_error": 6,
+          "completion_rate_percent": 86.24,
+          "average_completion_time_ms": 6096.8
+        },
+        {
+          "load_factor": 1.3,
+          "tasks_submitted": 88,
+          "tasks_completed": 83,
+          "tasks_failed": 5,
+          "tasks_timeout": 3,
+          "tasks_error": 2,
+          "completion_rate_percent": 94.32,
+          "average_completion_time_ms": 4949.4
+        },
+        {
+          "load_factor": 1.07,
+          "tasks_submitted": 184,
+          "tasks_completed": 176,
+          "tasks_failed": 8,
+          "tasks_timeout": 5,
+          "tasks_error": 3,
+          "completion_rate_percent": 95.65,
+          "average_completion_time_ms": 4602.7
+        },
+        {
+          "load_factor": 1.78,
+          "tasks_submitted": 113,
+          "tasks_completed": 101,
+          "tasks_failed": 12,
+          "tasks_timeout": 7,
+          "tasks_error": 5,
+          "completion_rate_percent": 89.38,
+          "average_completion_time_ms": 5668.7
+        },
+        {
+          "load_factor": 1.37,
+          "tasks_submitted": 84,
+          "tasks_completed": 79,
+          "tasks_failed": 5,
+          "tasks_timeout": 3,
+          "tasks_error": 2,
+          "completion_rate_percent": 94.05,
+          "average_completion_time_ms": 5049.1
+        },
+        {
+          "load_factor": 2.48,
+          "tasks_submitted": 173,
+          "tasks_completed": 142,
+          "tasks_failed": 31,
+          "tasks_timeout": 19,
+          "tasks_error": 12,
+          "completion_rate_percent": 82.08,
+          "average_completion_time_ms": 6727.3
+        },
+        {
+          "load_factor": 0.8,
+          "tasks_submitted": 65,
+          "tasks_completed": 65,
+          "tasks_failed": 0,
+          "tasks_timeout": 0,
+          "tasks_error": 0,
+          "completion_rate_percent": 100.0,
+          "average_completion_time_ms": 4202.7
+        },
+        {
+          "load_factor": 2.47,
+          "tasks_submitted": 141,
+          "tasks_completed": 116,
+          "tasks_failed": 25,
+          "tasks_timeout": 15,
+          "tasks_error": 10,
+          "completion_rate_percent": 82.27,
+          "average_completion_time_ms": 6697.8
+        },
+        {
+          "load_factor": 0.9,
+          "tasks_submitted": 103,
+          "tasks_completed": 101,
+          "tasks_failed": 2,
+          "tasks_timeout": 1,
+          "tasks_error": 1,
+          "completion_rate_percent": 98.06,
+          "average_completion_time_ms": 4343.1
+        },
+        {
+          "load_factor": 1.82,
+          "tasks_submitted": 109,
+          "tasks_completed": 97,
+          "tasks_failed": 12,
+          "tasks_timeout": 7,
+          "tasks_error": 5,
+          "completion_rate_percent": 88.99,
+          "average_completion_time_ms": 5728.0
+        },
+        {
+          "load_factor": 1.41,
+          "tasks_submitted": 160,
+          "tasks_completed": 148,
+          "tasks_failed": 12,
+          "tasks_timeout": 7,
+          "tasks_error": 5,
+          "completion_rate_percent": 92.5,
+          "average_completion_time_ms": 5114.3
+        },
+        {
+          "load_factor": 0.91,
+          "tasks_submitted": 135,
+          "tasks_completed": 132,
+          "tasks_failed": 3,
+          "tasks_timeout": 2,
+          "tasks_error": 1,
+          "completion_rate_percent": 97.78,
+          "average_completion_time_ms": 4361.6
+        },
+        {
+          "load_factor": 1.59,
+          "tasks_submitted": 122,
+          "tasks_completed": 111,
+          "tasks_failed": 11,
+          "tasks_timeout": 7,
+          "tasks_error": 4,
+          "completion_rate_percent": 90.98,
+          "average_completion_time_ms": 5388.0
+        }
+      ],
+      "reliability_metrics": {
+        "mean_time_between_failures_hours": 87.32,
+        "mean_time_to_recovery_minutes": 2.33,
+        "system_availability_percent": 99.955,
+        "error_distribution": {
+          "timeout_errors": 60.6,
+          "processing_errors": 39.4
+        }
+      },
+      "quality_metrics": {
+        "output_accuracy_percent": 93.39,
+        "response_coherence_score": 0.885,
+        "task_complexity_handling_score": 0.84,
+        "user_satisfaction_score": 4.59
+      },
+      "coordination_completion_impact": {
+        "consensus_completion_overhead_ms": 14.9,
+        "distributed_task_success_rate": 98.52,
+        "node_failure_recovery_time_s": 6.2,
+        "load_balancing_effectiveness": 0.889,
+        "coordination_induced_failures": 0,
+        "consensus_timeout_events": 3,
+        "task_migration_success_rate": 0.927
+      }
+    },
+    "complexity_very_complex_tokens_500": {
+      "measurement_start": "2025-08-04T04:36:49.975790Z",
+      "measurement_end": "2025-08-05T05:24:04.975797Z",
+      "measurement_duration_s": 2835,
+      "task_configuration": {
+        "complexity_level": "very_complex",
+        "target_tokens": 500,
+        "context_length": 2048,
+        "timeout_threshold_ms": 10000,
+        "retry_attempts": 3,
+        "priority_levels": [
+          "high",
+          "medium",
+          "low"
+        ]
+      },
+      "aggregate_statistics": {
+        "total_tasks_submitted": 2808,
+        "total_tasks_completed": 2378,
+        "total_tasks_failed": 430,
+        "total_tasks_timeout": 261,
+        "total_tasks_error": 169,
+        "overall_completion_rate_percent": 84.69,
+        "overall_failure_rate_percent": 15.31,
+        "average_completion_time_ms": 4038.37,
+        "completion_time_p95_ms": 5439.23,
+        "completion_time_p99_ms": 5929.83
+      },
+      "temporal_completion_data": [
+        {
+          "load_factor": 2.08,
+          "tasks_submitted": 171,
+          "tasks_completed": 138,
+          "tasks_failed": 33,
+          "tasks_timeout": 20,
+          "tasks_error": 13,
+          "completion_rate_percent": 80.7,
+          "average_completion_time_ms": 10203.1
+        },
+        {
+          "load_factor": 1.57,
+          "tasks_submitted": 156,
+          "tasks_completed": 133,
+          "tasks_failed": 23,
+          "tasks_timeout": 14,
+          "tasks_error": 9,
+          "completion_rate_percent": 85.26,
+          "average_completion_time_ms": 8921.4
+        },
+        {
+          "load_factor": 1.14,
+          "tasks_submitted": 178,
+          "tasks_completed": 158,
+          "tasks_failed": 20,
+          "tasks_timeout": 12,
+          "tasks_error": 8,
+          "completion_rate_percent": 88.76,
+          "average_completion_time_ms": 7850.0
+        },
+        {
+          "load_factor": 2.03,
+          "tasks_submitted": 99,
+          "tasks_completed": 81,
+          "tasks_failed": 18,
+          "tasks_timeout": 11,
+          "tasks_error": 7,
+          "completion_rate_percent": 81.82,
+          "average_completion_time_ms": 10084.8
+        },
+        {
+          "load_factor": 1.63,
+          "tasks_submitted": 113,
+          "tasks_completed": 95,
+          "tasks_failed": 18,
+          "tasks_timeout": 11,
+          "tasks_error": 7,
+          "completion_rate_percent": 84.07,
+          "average_completion_time_ms": 9081.9
+        },
+        {
+          "load_factor": 1.75,
+          "tasks_submitted": 165,
+          "tasks_completed": 137,
+          "tasks_failed": 28,
+          "tasks_timeout": 17,
+          "tasks_error": 11,
+          "completion_rate_percent": 83.03,
+          "average_completion_time_ms": 9374.6
+        },
+        {
+          "load_factor": 1.42,
+          "tasks_submitted": 190,
+          "tasks_completed": 164,
+          "tasks_failed": 26,
+          "tasks_timeout": 16,
+          "tasks_error": 10,
+          "completion_rate_percent": 86.32,
+          "average_completion_time_ms": 8549.2
+        },
+        {
+          "load_factor": 1.05,
+          "tasks_submitted": 105,
+          "tasks_completed": 94,
+          "tasks_failed": 11,
+          "tasks_timeout": 7,
+          "tasks_error": 4,
+          "completion_rate_percent": 89.52,
+          "average_completion_time_ms": 7621.1
+        },
+        {
+          "load_factor": 1.08,
+          "tasks_submitted": 125,
+          "tasks_completed": 112,
+          "tasks_failed": 13,
+          "tasks_timeout": 8,
+          "tasks_error": 5,
+          "completion_rate_percent": 89.6,
+          "average_completion_time_ms": 7703.4
+        },
+        {
+          "load_factor": 2.24,
+          "tasks_submitted": 120,
+          "tasks_completed": 95,
+          "tasks_failed": 25,
+          "tasks_timeout": 15,
+          "tasks_error": 10,
+          "completion_rate_percent": 79.17,
+          "average_completion_time_ms": 10609.8
+        },
+        {
+          "load_factor": 1.35,
+          "tasks_submitted": 78,
+          "tasks_completed": 68,
+          "tasks_failed": 10,
+          "tasks_timeout": 6,
+          "tasks_error": 4,
+          "completion_rate_percent": 87.18,
+          "average_completion_time_ms": 8368.7
+        },
+        {
+          "load_factor": 0.91,
+          "tasks_submitted": 81,
+          "tasks_completed": 74,
+          "tasks_failed": 7,
+          "tasks_timeout": 4,
+          "tasks_error": 3,
+          "completion_rate_percent": 91.36,
+          "average_completion_time_ms": 7265.2
+        },
+        {
+          "load_factor": 1.22,
+          "tasks_submitted": 85,
+          "tasks_completed": 75,
+          "tasks_failed": 10,
+          "tasks_timeout": 6,
+          "tasks_error": 4,
+          "completion_rate_percent": 88.24,
+          "average_completion_time_ms": 8045.0
+        },
+        {
+          "load_factor": 1.03,
+          "tasks_submitted": 172,
+          "tasks_completed": 154,
+          "tasks_failed": 18,
+          "tasks_timeout": 11,
+          "tasks_error": 7,
+          "completion_rate_percent": 89.53,
+          "average_completion_time_ms": 7572.1
+        },
+        {
+          "load_factor": 2.06,
+          "tasks_submitted": 196,
+          "tasks_completed": 158,
+          "tasks_failed": 38,
+          "tasks_timeout": 23,
+          "tasks_error": 15,
+          "completion_rate_percent": 80.61,
+          "average_completion_time_ms": 10155.2
+        },
+        {
+          "load_factor": 1.84,
+          "tasks_submitted": 151,
+          "tasks_completed": 125,
+          "tasks_failed": 26,
+          "tasks_timeout": 16,
+          "tasks_error": 10,
+          "completion_rate_percent": 82.78,
+          "average_completion_time_ms": 9598.5
+        },
+        {
+          "load_factor": 1.37,
+          "tasks_submitted": 192,
+          "tasks_completed": 166,
+          "tasks_failed": 26,
+          "tasks_timeout": 16,
+          "tasks_error": 10,
+          "completion_rate_percent": 86.46,
+          "average_completion_time_ms": 8413.0
+        },
+        {
+          "load_factor": 2.28,
+          "tasks_submitted": 181,
+          "tasks_completed": 141,
+          "tasks_failed": 40,
+          "tasks_timeout": 24,
+          "tasks_error": 16,
+          "completion_rate_percent": 77.9,
+          "average_completion_time_ms": 10696.3
+        },
+        {
+          "load_factor": 1.86,
+          "tasks_submitted": 189,
+          "tasks_completed": 156,
+          "tasks_failed": 33,
+          "tasks_timeout": 20,
+          "tasks_error": 13,
+          "completion_rate_percent": 82.54,
+          "average_completion_time_ms": 9661.4
+        },
+        {
+          "load_factor": 1.22,
+          "tasks_submitted": 61,
+          "tasks_completed": 54,
+          "tasks_failed": 7,
+          "tasks_timeout": 4,
+          "tasks_error": 3,
+          "completion_rate_percent": 88.52,
+          "average_completion_time_ms": 8040.2
+        }
+      ],
+      "reliability_metrics": {
+        "mean_time_between_failures_hours": 108.24,
+        "mean_time_to_recovery_minutes": 2.18,
+        "system_availability_percent": 99.966,
+        "error_distribution": {
+          "timeout_errors": 60.7,
+          "processing_errors": 39.3
+        }
+      },
+      "quality_metrics": {
+        "output_accuracy_percent": 92.99,
+        "response_coherence_score": 0.939,
+        "task_complexity_handling_score": 0.876,
+        "user_satisfaction_score": 4.4
+      },
+      "coordination_completion_impact": {
+        "consensus_completion_overhead_ms": 8.9,
+        "distributed_task_success_rate": 96.58,
+        "node_failure_recovery_time_s": 9.0,
+        "load_balancing_effectiveness": 0.905,
+        "coordination_induced_failures": 1,
+        "consensus_timeout_events": 2,
+        "task_migration_success_rate": 0.962
+      }
+    }
+  },
+  "experimental_validation": {
+    "measurement_equipment": {
+      "task_monitor": "custom_completion_tracker",
+      "logging_system": "ELK Stack",
+      "metrics_collector": "Prometheus",
+      "error_analyzer": "Sentry",
+      "completion_precision": "\u00b10.1%",
+      "timing_precision": "\u00b11ms",
+      "last_calibration": "2024-12-14T14:30:00Z",
+      "calibration_certificate": "CAL-2024-TASK-006",
+      "traceability_standard": "laboratory_traceable_standards"
+    },
+    "experimental_controls": {
+      "task_isolation": "containerized",
+      "resource_limits": "enforced",
+      "timeout_handling": "graceful",
+      "error_propagation": "contained",
+      "retry_logic": "exponential_backoff",
+      "measurement_repeatability": "\u00b11.5%"
+    },
+    "statistical_validation": {
+      "sample_size_per_complexity": 1000,
+      "measurement_repetitions": 12,
+      "confidence_interval": 0.95,
+      "outlier_detection": "tukey_fences",
+      "normality_tests": [
+        "ks_test",
+        "anderson_darling"
+      ],
+      "completion_time_distribution": "log_normal"
+    }
+  },
+  "medBIoT_integration": {
+    "dataset_version": "v2.1",
+    "devices_analyzed": 45,
+    "network_patterns_extracted": 23,
+    "traffic_characteristics": {
+      "peak_bandwidth_mbps": 89.4,
+      "average_packet_size_bytes": 1024,
+      "inter_arrival_time_ms": 15.7,
+      "protocol_distribution": {
+        "tcp": 0.72,
+        "udp": 0.24,
+        "other": 0.04
+      }
+    },
+    "device_behavior_modeling": {
+      "activity_cycles": 8,
+      "sleep_wake_patterns": true,
+      "burst_traffic_events": 156,
+      "predictable_patterns": 0.834
+    }
+  },
+  "workload_characterization": {
+    "task_complexity_distribution": {
+      "simple": 0.3,
+      "moderate": 0.4,
+      "complex": 0.2,
+      "very_complex": 0.1
+    },
+    "dataset_characteristics": {
+      "total_samples": 50000,
+      "average_input_length": 157,
+      "vocabulary_size": 32000,
+      "language_distribution": {
+        "english": 0.8,
+        "multilingual": 0.2
+      }
+    },
+    "performance_benchmarks": {
+      "target_completion_rate": 95.0,
+      "target_latency_p95_ms": 2000,
+      "target_throughput_tasks_per_sec": 10.0,
+      "sla_compliance_target": 99.0
+    }
+  }
+}
